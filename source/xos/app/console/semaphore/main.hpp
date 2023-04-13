@@ -72,51 +72,83 @@ protected:
 
     /// ...run
     virtual int windows_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::microsoft::windows::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::microsoft::windows::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::microsoft::windows::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int osx_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::apple::osx::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::apple::osx::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::apple::osx::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int solaris_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::oracle::solaris::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::oracle::solaris::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = ", NULL);
+        this->outln();
         return err;
     }
     virtual int mach_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::mach::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::mach::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::mach::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int linux_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "his->template run< ::xos::mt::linux::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::linux::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::linux::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int posix_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::posix::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::posix::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::posix::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int os_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::os::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::os::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::os::semaphore >()", NULL);
+        this->outln();
         return err;
     }
     virtual int none_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::derived::semaphore >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::derived::semaphore >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::derived::semaphore >()", NULL);
+        this->outln();
         return err;
     }
 

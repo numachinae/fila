@@ -72,51 +72,83 @@ protected:
 
     /// ...run
     virtual int windows_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::microsoft::windows::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::microsoft::windows::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::microsoft::windows::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int osx_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::apple::osx::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::apple::osx::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::apple::osx::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int solaris_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::oracle::solaris::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::oracle::solaris::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::oracle::solaris::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int mach_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::mach::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::mach::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::mach::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int linux_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::linux::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::linux::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::linux::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int posix_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::posix::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::posix::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::posix::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int os_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::os::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::os::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::os::mutex >()", NULL);
+        this->outln();
         return err;
     }
     virtual int none_run(int argc, char_t** argv, char_t** env) {
+        this->outln();
         this->outlln(__LOCATION__, "this->template run< ::xos::mt::derived::mutex >()...", NULL);
+        this->outln();
         int err = this->template run< ::xos::mt::derived::mutex >();
+        this->outln();
         this->outlln(__LOCATION__, "...", signed_to_string(err).chars(), " = this->template run< ::xos::mt::derived::mutex >()", NULL);
+        this->outln();
         return err;
     }
 
